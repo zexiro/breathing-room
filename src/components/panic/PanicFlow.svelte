@@ -83,8 +83,9 @@
         </button>
         <div class="crisis-info">
           <p class="crisis-title">Need more help?</p>
-          <p class="crisis-line">988 Suicide & Crisis Lifeline: <a href="tel:988">988</a></p>
-          <p class="crisis-line">Crisis Text Line: Text <strong>HELLO</strong> to <strong>741741</strong></p>
+          <p class="crisis-line">Samaritans: <a href="tel:116123">116 123</a> (free, 24/7)</p>
+          <p class="crisis-line">Shout: Text <strong>SHOUT</strong> to <strong>85258</strong></p>
+          <p class="crisis-line">NHS: Call <a href="tel:111">111</a> for urgent mental health help</p>
         </div>
       </div>
     </div>

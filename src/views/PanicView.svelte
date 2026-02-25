@@ -27,16 +27,20 @@
     <div class="crisis-section">
       <h2 class="crisis-heading">Crisis Resources</h2>
       <div class="crisis-card">
-        <p class="crisis-line"><strong>988 Suicide & Crisis Lifeline</strong></p>
-        <p class="crisis-detail">Call or text <a href="tel:988">988</a></p>
+        <p class="crisis-line"><strong>Samaritans</strong></p>
+        <p class="crisis-detail">Call free, 24/7: <a href="tel:116123">116 123</a></p>
       </div>
       <div class="crisis-card">
-        <p class="crisis-line"><strong>Crisis Text Line</strong></p>
-        <p class="crisis-detail">Text <strong>HELLO</strong> to <strong>741741</strong></p>
+        <p class="crisis-line"><strong>Shout</strong></p>
+        <p class="crisis-detail">Text <strong>SHOUT</strong> to <strong>85258</strong> — free, 24/7</p>
       </div>
       <div class="crisis-card">
-        <p class="crisis-line"><strong>International Association for Suicide Prevention</strong></p>
-        <p class="crisis-detail"><a href="https://www.iasp.info/resources/Crisis_Centres/" target="_blank" rel="noopener">Find your country's crisis line</a></p>
+        <p class="crisis-line"><strong>NHS Urgent Mental Health Help</strong></p>
+        <p class="crisis-detail">Call <a href="tel:111">111</a> and select the mental health option</p>
+      </div>
+      <div class="crisis-card">
+        <p class="crisis-line"><strong>CALM</strong></p>
+        <p class="crisis-detail">Call <a href="tel:0800585858">0800 58 58 58</a> — 5pm to midnight, every day</p>
       </div>
     </div>
   </div>
