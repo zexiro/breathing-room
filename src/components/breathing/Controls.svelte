@@ -26,6 +26,17 @@
     {$breathingState.isRunning ? 'Stop' : 'Start'}
   </button>
 
+  <button
+    class="cue-toggle"
+    class:active={$preferences.breathingCues}
+    onclick={() => preferences.update((p) => ({ ...p, breathingCues: !p.breathingCues }))}
+    aria-label="Audio cues: {$preferences.breathingCues ? 'on' : 'off'}"
+    aria-pressed={$preferences.breathingCues}
+  >
+    <span class="cue-icon" aria-hidden="true">{$preferences.breathingCues ? '🔔' : '🔕'}</span>
+    <span>Audio cues {$preferences.breathingCues ? 'on' : 'off'}</span>
+  </button>
+
   {#if !$breathingState.isRunning}
     <div class="pattern-selector" role="radiogroup" aria-label="Breathing pattern">
       {#each patterns as pattern}
@@ -48,16 +59,6 @@
     </div>
   {/if}
 
-  <button
-    class="cue-toggle"
-    class:active={$preferences.breathingCues}
-    onclick={() => preferences.update((p) => ({ ...p, breathingCues: !p.breathingCues }))}
-    aria-label="Audio cues: {$preferences.breathingCues ? 'on' : 'off'}"
-    aria-pressed={$preferences.breathingCues}
-  >
-    <span class="cue-icon" aria-hidden="true">{$preferences.breathingCues ? '🔔' : '🔕'}</span>
-    <span>Audio cues {$preferences.breathingCues ? 'on' : 'off'}</span>
-  </button>
 </div>
 
 <style>
