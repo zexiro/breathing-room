@@ -58,6 +58,7 @@
     align-items: center;
     background: var(--bg-secondary);
     border-top: 1px solid var(--border);
+    padding-top: var(--space-xs);
     padding-bottom: env(safe-area-inset-bottom, 0);
     z-index: 10;
   }
