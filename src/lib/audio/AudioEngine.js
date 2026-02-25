@@ -83,6 +83,7 @@ function createOcean(gain) {
   lp.type = 'lowpass';
   lp.frequency.value = 500;
   noise.connect(lp).connect(lfoGain).connect(gain);
+  noise.start();
   return { sources: [noise, lfo], filters: [lp] };
 }
 
