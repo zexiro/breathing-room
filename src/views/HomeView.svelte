@@ -4,13 +4,18 @@
   import Controls from '../components/breathing/Controls.svelte';
   import ScreenReaderAnnounce from '../components/shared/ScreenReaderAnnounce.svelte';
   import { breathingState, currentPhase } from '../lib/stores/breathing.js';
+  import { preferences } from '../lib/stores/preferences.js';
   import { setPhaseChangeCallback } from '../lib/breathing/timer.js';
+  import { playPhaseCue } from '../lib/audio/breathingCues.js';
 
   let announcement = $state('');
 
   $effect(() => {
     setPhaseChangeCallback((phase) => {
       announcement = phase.label;
+      if ($preferences.breathingCues) {
+        playPhaseCue(phase.type);
+      }
     });
     return () => setPhaseChangeCallback(null);
   });

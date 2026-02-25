@@ -6,6 +6,7 @@ const defaults = {
   theme: 'auto',
   breathingPattern: 'box',
   soundVolume: 0.3,
+  breathingCues: true,
   reducedMotion: false,
 };
 

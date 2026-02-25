@@ -47,6 +47,17 @@
       Cycle {$breathingState.cycleCount + 1}
     </div>
   {/if}
+
+  <button
+    class="cue-toggle"
+    class:active={$preferences.breathingCues}
+    onclick={() => preferences.update((p) => ({ ...p, breathingCues: !p.breathingCues }))}
+    aria-label="Audio cues: {$preferences.breathingCues ? 'on' : 'off'}"
+    aria-pressed={$preferences.breathingCues}
+  >
+    <span class="cue-icon" aria-hidden="true">{$preferences.breathingCues ? '🔔' : '🔕'}</span>
+    <span>Audio cues {$preferences.breathingCues ? 'on' : 'off'}</span>
+  </button>
 </div>
 
 <style>
@@ -123,5 +134,28 @@
     color: var(--text-muted);
     font-size: var(--font-size-sm);
     font-weight: 600;
+  }
+  .cue-toggle {
+    display: flex;
+    align-items: center;
+    gap: var(--space-sm);
+    padding: var(--space-sm) var(--space-md);
+    border-radius: var(--radius-full);
+    background: var(--bg-secondary);
+    font-size: var(--font-size-sm);
+    color: var(--text-muted);
+    font-weight: 600;
+    transition: all var(--transition-fast);
+    min-height: 40px;
+  }
+  .cue-toggle.active {
+    color: var(--accent);
+    background: var(--accent-dim);
+  }
+  .cue-toggle:hover {
+    background: var(--bg-elevated);
+  }
+  .cue-icon {
+    font-size: 1rem;
   }
 </style>

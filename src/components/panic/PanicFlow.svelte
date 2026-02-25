@@ -1,6 +1,8 @@
 <script>
   import { breathingState, currentPhase, getPatterns } from '../../lib/stores/breathing.js';
+  import { preferences } from '../../lib/stores/preferences.js';
   import * as timer from '../../lib/breathing/timer.js';
+  import { playPhaseCue } from '../../lib/audio/breathingCues.js';
   import BreathingCircle from '../breathing/BreathingCircle.svelte';
   import ScreenReaderAnnounce from '../shared/ScreenReaderAnnounce.svelte';
 
@@ -15,6 +17,9 @@
     timer.start('box', PANIC_CYCLES);
     timer.setPhaseChangeCallback((p) => {
       announcement = p.label;
+      if ($preferences.breathingCues) {
+        playPhaseCue(p.type);
+      }
     });
 
     return () => {
