@@ -57,6 +57,9 @@
     </div>
   </main>
   <Navigation currentRoute={route} />
+  <footer class="codehawks-footer">
+    A <a href="https://www.codehawks.co.uk" target="_blank" rel="noopener noreferrer">CodeHawks</a> project
+  </footer>
 </div>
 
 <style>
@@ -78,5 +81,19 @@
     flex: 1;
     display: flex;
     flex-direction: column;
+  }
+  .codehawks-footer {
+    text-align: center;
+    padding: 0.75rem;
+    font-size: 0.7rem;
+    color: var(--text-muted);
+    font-family: var(--font-family);
+  }
+  .codehawks-footer a {
+    color: var(--text-secondary);
+    text-decoration: none;
+  }
+  .codehawks-footer a:hover {
+    text-decoration: underline;
   }
 </style>
