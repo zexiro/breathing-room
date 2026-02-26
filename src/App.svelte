@@ -58,11 +58,11 @@
         <HomeView />
       {/if}
     </div>
+    <footer class="codehawks-footer">
+      <a href="#/about">About</a> · A <a href="https://www.codehawks.co.uk" target="_blank" rel="noopener noreferrer">CodeHawks</a> project
+    </footer>
   </main>
   <Navigation currentRoute={route} />
-  <footer class="codehawks-footer">
-    <a href="#/about">About</a> · A <a href="https://www.codehawks.co.uk" target="_blank" rel="noopener noreferrer">CodeHawks</a> project
-  </footer>
 </div>
 
 <style>
