@@ -62,6 +62,16 @@
     </ul>
   </section>
 
+  <section class="about-section premium-cta-section">
+    <h2>Go further with Premium</h2>
+    <p>
+      Unlock unlimited custom breathing patterns, personal progress tracking, full offline
+      audio, and an ad-free experience. Just $4.99/month or $49.99/year (save 17%).
+      Start your 7-day free trial today.
+    </p>
+    <a href="#/premium" class="cta-button">Explore Premium</a>
+  </section>
+
   <section class="about-section">
     <h2>Built at Claude's Corner</h2>
     <p>
@@ -158,6 +168,10 @@
 
   .about-section a:hover {
     opacity: 0.8;
+  }
+
+  .premium-cta-section .cta-button {
+    margin-top: var(--space-md);
   }
 
   /* ── Lists ───────────────────────────────────────────── */

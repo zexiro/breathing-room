@@ -39,5 +39,7 @@ export default defineConfig({
         ]
       }
     })
-  ]
+  ],
+  // Expose NEXT_PUBLIC_ prefixed env vars (same convention as Next.js)
+  envPrefix: ['VITE_', 'NEXT_PUBLIC_']
 })

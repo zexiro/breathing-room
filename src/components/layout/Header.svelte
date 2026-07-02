@@ -11,7 +11,10 @@
       </svg>
       <span>Breathing Room</span>
     </a>
-    <ThemeToggle />
+    <div class="header-actions">
+      <a href="#/premium" class="premium-link">Premium</a>
+      <ThemeToggle />
+    </div>
   </div>
 </header>
 
@@ -43,5 +46,23 @@
     font-size: var(--font-size-base);
     color: var(--text-primary);
     text-decoration: none;
+  }
+  .header-actions {
+    display: flex;
+    align-items: center;
+    gap: var(--space-md);
+  }
+  .premium-link {
+    font-size: var(--font-size-sm);
+    font-weight: 600;
+    color: var(--accent);
+    text-decoration: none;
+    padding: var(--space-xs) var(--space-md);
+    border-radius: var(--radius-full);
+    border: 1px solid var(--accent);
+    transition: all var(--transition-fast);
+  }
+  .premium-link:hover {
+    background: var(--accent-dim);
   }
 </style>

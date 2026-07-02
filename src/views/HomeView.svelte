@@ -30,6 +30,14 @@
   </div>
 
   <Controls />
+
+  <a href="#/premium" class="premium-banner">
+    <span class="banner-icon" aria-hidden="true">&#10024;</span>
+    <span class="banner-text">
+      <strong>Premium</strong> — Unlimited patterns, progress tracking &amp; offline audio
+    </span>
+    <span class="banner-arrow" aria-hidden="true">&rsaquo;</span>
+  </a>
 </div>
 
 <style>
@@ -49,5 +57,43 @@
     flex: 1;
     justify-content: center;
     width: 100%;
+  }
+
+  .premium-banner {
+    display: flex;
+    align-items: center;
+    gap: var(--space-sm);
+    width: 100%;
+    padding: var(--space-sm) var(--space-md);
+    background: var(--accent-dim);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-full);
+    color: var(--text-secondary);
+    text-decoration: none;
+    font-size: var(--font-size-sm);
+    transition: all var(--transition-fast);
+  }
+
+  .premium-banner:hover {
+    border-color: var(--accent);
+    opacity: 0.95;
+  }
+
+  .banner-icon {
+    font-size: 1rem;
+  }
+
+  .banner-text {
+    flex: 1;
+    line-height: 1.4;
+  }
+
+  .banner-text strong {
+    color: var(--accent);
+  }
+
+  .banner-arrow {
+    font-size: var(--font-size-lg);
+    color: var(--text-muted);
   }
 </style>

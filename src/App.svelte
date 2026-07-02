@@ -8,6 +8,7 @@
   import SoundsView from './views/SoundsView.svelte';
   import PanicView from './views/PanicView.svelte';
   import AboutView from './views/AboutView.svelte';
+  import PremiumView from './views/PremiumView.svelte';
 
   let route = $state(window.location.hash.slice(1) || '/');
 
@@ -54,12 +55,14 @@
         <PanicView />
       {:else if route === '/about'}
         <AboutView />
+      {:else if route === '/premium'}
+        <PremiumView />
       {:else}
         <HomeView />
       {/if}
     </div>
     <footer class="codehawks-footer">
-      <a href="#/about">About</a> · A <a href="https://www.codehawks.co.uk" target="_blank" rel="noopener noreferrer">CodeHawks</a> project
+      <a href="#/about">About</a> · <a href="#/premium">Premium</a> · A <a href="https://www.codehawks.co.uk" target="_blank" rel="noopener noreferrer">CodeHawks</a> project
     </footer>
   </main>
   <Navigation currentRoute={route} />
